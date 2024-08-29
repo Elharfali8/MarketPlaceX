@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+:root {
+  --primary-color: #1D4ED8;
+  --secondary-color: #FBBF24;
+  --accent-color: #10B981;
+  --background-color: #F3F4F6;
+  --text-color: #111827;
+  --secondary-text-color: #6B7280;
+  --error-color: #EF4444;
+  --success-color: #22C55E;
+  --border-color: #D1D5DB;
+  --hover-color: #3B82F6;
+}
+
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Fonts */
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* --------------------------------- */
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar a {
+  color: var(--background-color);
+  transition: all ease-in-out 150ms;
+}
+
+.navbar a:hover {
+  background-color: var(--hover-color);
+}
+
+.active {
+  background-color: var(--hover-color);
+}
+
+.white-color {
+  color: var(--background-color);
+}
+
+.main-container {
+  margin-left: auto;   
+  margin-right: auto;  
+  
+  padding-left: 1rem;  
+  padding-right: 1rem; 
+}
+
+/* For large screens (lg) */
+@media (min-width: 1024px) {
+  .main-container {
+    padding-left: 0.5rem;  
+    padding-right: 0.5rem; 
+  }
+}
+
+/* For extra-large screens (xl) */
+@media (min-width: 1280px) {
+  .main-container {
+    padding-left: 0.25rem;  
+    padding-right: 0.25rem; 
+  }
+}
